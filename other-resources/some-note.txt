@@ -1,0 +1,21 @@
+Update:
+
+tblUsers: fName, role (admin only), pass, phone
+tblCategories: name, des
+tblProducts: name, cateID, price, quantity, status
+tblPromotions: name, discountPercent, endDate, status
+tblCarts: none
+tblCartDetails: quantity (if == 0 -> delete)
+tblInvoices: totalAmount, status
+tblInvoiceDetails: quantity (if == 0 -> delete)
+tblDeliveries: address, deliveryDate, status
+tblReturns: reason, status (admin or seller only)
+tblCustomerCares: subject, content, status, reply
+
+Task:
+
+user: tui copy từ cũ, thêm bcrypt và tự register (ko tính 1 task)
+Custom care, categories và promotion: Huy bé
+Product, cart và cart details: Đức
+invoices và invoices details: Duy
+returns và deliveries: Huy lớn
