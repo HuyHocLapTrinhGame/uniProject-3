@@ -258,7 +258,7 @@ public class ProductController extends HttpServlet {
 
         if (oldPrice != price) {
             Timestamp changeDate = new Timestamp(System.currentTimeMillis());
-            String note = oldPrice > price ? "increasing price" : "decreasing price";
+            String note = oldPrice > price ?  "decreasing price" : "increasing price";
             productService.createHistory(productID, changeDate, oldPrice, price, note);
         }
         return productService.updateProduct(productID, name, categoryID, price, quantity, status, promoID, currentUser);
